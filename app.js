@@ -54,7 +54,7 @@ document.getElementById("neither").onclick = () => {
 	document.getElementById("text").hidden = false;
 	const characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
 	link = "";
-	for (var i = 0; i < 40; i++) {
+	for (let i = 0; i < 40; i++) {
 		link += characters.charAt(Math.floor(Math.random() * characters.length));
 	}
 	socket.emit("self", link);
